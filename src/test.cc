@@ -17,9 +17,8 @@ TEST(Test, eq_matrix) {
   S21Matrix A(3, 3);
   S21Matrix B(3, 3);
   fill_matrix(A);
-  if (A == B) {
-    EXPECT_EQ(1, 1);
-  }
+  fill_matrix(B);
+  EXPECT_TRUE(A == B);
 }
 
 TEST(Test, check_rows) {
